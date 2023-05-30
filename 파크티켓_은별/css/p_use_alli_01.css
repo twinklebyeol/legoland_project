@@ -46,6 +46,7 @@
 /* Universal tags  */
 * {
   box-sizing: border-box;
+  cursor: url("/pngwing32.png"), auto;
 }
 
 body {
@@ -136,20 +137,20 @@ a:hover {
   align-items: center;
 }
 
-.main_img {
-  background: url(/p_use_alli_01/brick-street.webp) center/cover no-repeat;
+.main_title_img {
+  background: url(/image/p_use_alli_01/brick-street.webp) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
   display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.main_text {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
@@ -158,7 +159,7 @@ a:hover {
   opacity: 0.95;
 }
 
-.main_text > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);

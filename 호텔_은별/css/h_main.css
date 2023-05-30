@@ -127,38 +127,41 @@ a:hover {
     /* transform: translate(0); */
   }
 }
-.hotel_main {
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.hotelmain_img {
-  background: url(/h_main/main_img.png) center/cover no-repeat;
+
+.main_title_img {
+  background: url(/image/h_main/main_img.png) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
+  display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
-  background: var(--color-blue3);
-  width: 1000px;
-  height: 200px;
+  background: var(--color-green);
+  width: 500px;
+  height: 110px;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-white);
   text-align: center;
-  line-height: 200px;
+  line-height: 110px;
 }
 
 #gallerybox {
@@ -219,7 +222,7 @@ a:hover {
   margin-bottom: 30px;
 }
 .textarea_title h3 {
-  color: var(--color-orange);
+  color: var(--color-green);
   font-weight: var(--weight-bold);
   font-size: var(--font-large);
   padding-top: 3%;
@@ -227,7 +230,7 @@ a:hover {
 }
 
 hr {
-  background: var(--color-orange);
+  background: var(--color-green);
   width: 1200px;
   height: 1px;
   border: 0;
@@ -268,24 +271,33 @@ hr {
   text-decoration: underline;
 }
 
+.crad_headline h4 {
+  margin: 0px;
+}
+.crad_headline {
+  width: 1350px;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  margin: 0px auto 20px;
+}
+
 /* * 카드 */
 .all_att {
+  margin: 0px auto 200px;
   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
   width: 1350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 200px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
-  width: 400px;
-  height: 600px;
+  width: calc(100% / 4);
+  aspect-ratio: 2 / 3;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -298,8 +310,8 @@ hr {
 
 /* 카드 이미지 */
 .card_img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -343,6 +355,8 @@ hr {
   padding: 20px 20px;
   font-size: 100%;
   font-weight: var(--weight-regular);
+  line-height: 160%;
+  margin-bottom: 80px;
 }
 
 .redbtn_box,

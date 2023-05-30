@@ -132,48 +132,43 @@ a:hover {
   margin-bottom: 100px;
 }
 
-/* Main */
-.hotel_main {
-  margin: auto;
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hotelmain_img {
-  background: url(/h_ho_room_04/entertainment-at-adventure-play.jpg)
+.main_title_img {
+  background: url(/image/h_ho_room_04/entertainment-at-adventure-play.jpg)
     center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
+  display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: 800px;
+  width: 700px;
   height: 110px;
-  opacity: 90%;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
-  font-weight: bold;
+  font-weight: var(--weight-bold);
   color: var(--color-white);
   text-align: center;
   line-height: 110px;
 }
-
-/* textarea_title */
-
-/* Slide */
 
 #gallerybox1,
 #gallerybox2 {

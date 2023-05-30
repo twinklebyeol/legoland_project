@@ -12,7 +12,7 @@
   --color-light-grey: #7c7979;
   --color-blue1: #3f63bf;
   --color-blue2: #0046b6;
-  --color-blue3: #31a1e0;
+  --color-blue3: #00aaff;
   --color-light-yellow: #fefbf2;
   --color-orange: #ff6f00;
   --color-black: #000000;
@@ -96,10 +96,7 @@ p {
   color: var(--color-black);
   margin: 4px 0;
 }
-#content {
-  margin-bottom: 200px;
-}
-/* Main */
+
 .main_title {
   display: flex;
   justify-content: flex-start;
@@ -123,7 +120,7 @@ p {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: 650px;
+  width: 700px;
   height: 110px;
   opacity: 0.95;
 }
@@ -137,59 +134,104 @@ p {
   line-height: 110px;
 }
 
-#textarea {
-  width: 1350px;
+/* 폼 스타일 */
+.reservation-form,
+.consent-form {
+  max-width: 600px;
   margin: auto;
-}
-
-.textarea_box {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  margin: 50px auto;
-}
-
-/* 본문 타이틀 */
-.textarea_title1 {
   margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.form-group {
+  margin: 50px 40px;
+}
+/* 라벨 스타일 */
+.form-group > label {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #333333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="text"],
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 15px 70px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #e65100;
+}
+.text_style {
+  font-size: x-small;
+  color: #838383;
+}
+
+.form-group input {
+  width: 500px;
+  align-items: center;
+}
+
+.form-group input[type="radio"] {
+  /* 크기 조정 */
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+/* 라디오 버튼 컨테이너 스타일 */
+.form-group div {
   display: flex;
-}
-.textarea_title1 h2 {
-  color: #e02027;
-  font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+  align-items: center;
+  margin-bottom: 8px;
 }
 
-.reservation_btn {
-  width: 255px;
-  height: 60px;
-  font-size: var(--font-regular);
-  background: #e02027;
-  color: white;
-  margin-left: 30px;
-}
-.textarea_title2 {
-  margin-top: 20px;
-  text-align: left;
-  font-weight: var(--weight-bold);
-  font-size: var(--font-large);
-}
-.textarea_title2 h3 {
-  margin-top: 50px;
-  text-align: center;
-
-  color: #ffbb00;
-  font-weight: var(--weight-bold);
-  font-size: var(--font-large);
+/* 선택된 라디오 버튼 스타일 */
+.form-group input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: black;
 }
 
-.restaurant_menu1 {
+.form-group .checkbox-wrap {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
 }
 
-.restaurant_menu1 img {
-  width: 800px;
-  margin-top: 60px;
+#consent {
+  width: 50px;
+}
+
+.form-group .checkbox-wrap label {
+  margin-left: 5px;
+}
+
+#marketingconsent {
+  width: 50px;
+}
+.form-group .checkbox-wrap label {
+  margin-left: 5px;
+}
+
+.form-group2 button {
+  margin: 16px 0;
 }

@@ -127,40 +127,41 @@ a:hover {
     /* transform: translate(0); */
   }
 }
-.hotel_main {
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hotelmain_img {
-  background: url(/h_ho_spec_03/pg_main.png) center/cover no-repeat;
+.main_title_img {
+  background: url(/image/h_ho_spec_03/pg_main.png) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
   display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
-  background: var(--color-blue3);
-  width: 930px;
-  height: 200px;
+  background: var(--color-green);
+  width: 500px;
+  height: 110px;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-white);
   text-align: center;
-  line-height: 200px;
+  line-height: 110px;
 }
 
 #gallerybox {

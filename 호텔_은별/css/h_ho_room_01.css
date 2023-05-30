@@ -130,40 +130,41 @@ a:hover {
 
 /* HEADER */
 
-.hotel_main {
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hotelmain_img {
-  background: url(/h_ho_room_01/themeroommain.png) center/cover no-repeat;
+.main_title_img {
+  background: url(/image/h_ho_alli_01/hotel_main.png) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
   display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
-  background: var(--color-blue3);
-  width: 900px;
-  height: 200px;
+  background: var(--color-green);
+  width: 300px;
+  height: 110px;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-white);
   text-align: center;
-  line-height: 200px;
+  line-height: 110px;
 }
 
 #gallerybox1 {
@@ -181,36 +182,6 @@ a:hover {
   margin-top: 150px;
 }
 
-.slide {
-  width: 700px;
-  height: 700px;
-  overflow: hidden;
-  position: relative;
-}
-.slide ul {
-  width: 5000px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 0;
-}
-.slide ul li {
-  display: inline-block;
-}
-#back {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  cursor: pointer;
-  z-index: 1;
-}
-#next {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  z-index: 1;
-}
 .red__button {
   /* position: absolute; */
   margin-top: 8%;
@@ -222,16 +193,6 @@ a:hover {
   color: white;
 }
 
-.galleryborder_title {
-  width: 700px;
-}
-
-.galleryborder_title h2 {
-  color: var(--color-blue3);
-  font-weight: var(--weight-bold);
-  font-size: var(--font-large);
-  margin-bottom: 30px;
-}
 .textarea_title h3 {
   margin: auto;
   color: var(--color-green);
@@ -248,38 +209,34 @@ hr {
   height: 1px;
   border: 0;
 }
-.textarea_description_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3%;
-}
 
-.galleryborder__description,
-.textarea_description p {
-  line-height: 160%;
-  font-size: var(--font-micro);
-  word-break: break-word;
+.crad_headline h4 {
+  margin: 0px;
+}
+.crad_headline {
+  width: 1350px;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  margin: 0px auto 20px;
 }
 
 /* * 카드 */
 .all_att {
+  margin: 0px auto 200px;
   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
   width: 1350px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: auto;
   font-size: 16px;
   font-style: normal;
-  margin-bottom: 200px;
 }
 
 .card {
   border: 1.5px solid rgb(229, 229, 229);
   background: #fff;
-  width: 400px;
-  height: 600px;
+  width: calc(100% / 4);
+  aspect-ratio: 2 / 3;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -292,8 +249,8 @@ hr {
 
 /* 카드 이미지 */
 .card_img {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -338,6 +295,7 @@ hr {
   font-size: 100%;
   font-weight: var(--weight-regular);
   line-height: 25px;
+  margin-bottom: 80px;
 }
 
 .redbtn_box,

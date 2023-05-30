@@ -131,36 +131,35 @@ a:hover {
 #content {
   margin-bottom: 100px;
 }
-
-.hotel_main {
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hotelmain_img {
-  background: url(/p_use_alli_03/brick-street.webp) center/cover no-repeat;
+.main_title_img {
+  background: url(/image/p_use_alli_04/brick-street.webp) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
+  display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: fit-content;
+  width: 960px;
   height: 110px;
-  opacity: 95%;
-  padding: 0 30px;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -168,6 +167,7 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
+
 #gallerybox {
   width: 1350px;
   margin: auto;
@@ -182,37 +182,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.slide {
-  width: 600px;
-  height: 600px;
-  overflow: hidden;
-  position: relative;
-}
-.slide ul {
-  width: 5000px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 0;
-}
-.slide ul li {
-  display: inline-block;
-}
-#back {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  cursor: pointer;
-  z-index: 1;
-}
-#next {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  z-index: 1;
 }
 
 .galleryborder_title {
@@ -239,7 +208,7 @@ a:hover {
   /* position: absolute; */
   margin-top: 8%;
   margin-left: 6%;
-  width: 255px;
+  width: 400px;
   height: 60px;
   font-size: var(--font-regular);
   background: #d01012;

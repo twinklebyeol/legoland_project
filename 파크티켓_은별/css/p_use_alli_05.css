@@ -132,35 +132,35 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.hotel_main {
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hotelmain_img {
-  background: url(/p_use_alli_03/brick-street.webp) center/cover no-repeat;
+.main_title_img {
+  background: url(/image/p_use_alli_05/brick-street.webp) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
+  display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: fit-content;
+  width: 500px;
   height: 110px;
-  opacity: 95%;
-  padding: 0 30px;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -168,6 +168,7 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
+
 #gallerybox1 {
   width: 1350px;
   margin: auto;

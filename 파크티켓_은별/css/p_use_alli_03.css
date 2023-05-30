@@ -132,35 +132,35 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.hotel_main {
+.main_title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.hotelmain_img {
-  background: url(/p_use_alli_03/brick-street.webp) center/cover no-repeat;
+.main_title_img {
+  background: url(/image/p_use_alli_03/brick-street.webp) center/cover no-repeat;
   margin-top: 90px;
   width: 100vw;
+  display: flex;
 }
 
-.hotelmain_img img {
+.main_title_img img {
   width: 100vw;
   height: auto;
   display: block;
 }
 
-.hotel_title {
+.main_title_txt {
   margin-top: 6.5rem;
   margin-bottom: 5.5rem;
   background: var(--color-green);
-  width: fit-content;
+  width: 520px;
   height: 110px;
-  opacity: 95%;
-  padding: 0 30px;
+  opacity: 0.95;
 }
 
-.hotel_title > h1 {
+.main_title_txt > h1 {
   margin: 0;
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -168,14 +168,13 @@ a:hover {
   text-align: center;
   line-height: 110px;
 }
-
 #gallerybox1 {
   width: 1350px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 400px;
   margin-bottom: 100px;
 }
 
@@ -185,7 +184,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 400px;
   margin-bottom: 100px;
 }
 
@@ -193,21 +192,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#back {
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  cursor: pointer;
-  z-index: 1;
-}
-#next {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
-  z-index: 1;
 }
 
 .galleryborder_title {
@@ -231,7 +215,6 @@ a:hover {
   font-weight: var(--weight-bold);
 }
 .red__button {
-  /* position: absolute; */
   margin-top: 8%;
   margin-left: 6%;
   width: 255px;
@@ -242,7 +225,64 @@ a:hover {
   flex-wrap: wrap;
 }
 
-/* * 카드 */
+/* 탭 */
+.tab {
+  width: 800px;
+  height: 200px;
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tab a {
+  width: 400px;
+  height: 150px;
+  margin: 0 auto;
+  color: black;
+  text-decoration: none;
+  font-size: 250%;
+  font-weight: 700;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab a:hover {
+  color: white;
+  cursor: pointer;
+}
+#tab_01.active,
+#tab_02.active,
+#tab_03.active,
+#tab_04.active {
+  color: white;
+}
+/* 쇼핑탭 */
+.sp_a {
+  width: 400px;
+  height: 150px;
+  background-image: url(/image/p_use_alli_03/tab_red.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  border: 0;
+}
+/* 다이닝탭 */
+.di_a {
+  width: 400px;
+  height: 150px;
+  background-image: url(/image/p_use_alli_03/tab_blue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  border: 0;
+}
+
+/* * 카드시작*/
 .all_att {
   /* 전체 카드랑 팝업 수평으로 배치할 때 사용 */
   width: 1350px;
